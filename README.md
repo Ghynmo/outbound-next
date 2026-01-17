@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pelita Desa Outbound
 
-## Getting Started
+Pelita Desa Outbound adalah platform web modern untuk wahana edukasi luar ruang "Pelita Desa". Website ini dirancang untuk memberikan informasi lengkap mengenai paket wisata edukasi, fasilitas, dan aktivitas yang tersedia, serta memudahkan calon pengunjung untuk melakukan reservasi.
 
-First, run the development server:
+Dibangun menggunakan **Next.js 16**, **Tailwind CSS v4**, dan **TypeScript**, aplikasi ini menawarkan performa tinggi, desain responsif, dan pengalaman pengguna yang interaktif.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Fitur Utama
+
+### 🌟 Pengunjung (Public)
+*   **Katalog Paket Outbound**: Informasi detail mengenai paket edukasi (Edu 1, Edu 2, Camping Ground, dll) beserta harga, fasilitas, dan aktivitas.
+*   **Galeri Aktivitas & Fasilitas**: Tampilan visual kegiatan outbound dan fasilitas yang tersedia.
+*   **Formulir Reservasi**: Kemudahan bagi pengunjung untuk mengirim permintaan booking langsung via WhatsApp.
+*   **Testimoni Pengunjung**: Menampilkan ulasan dari pengunjung sebelumnya (integrasi Google Reviews).
+*   **Informasi Kontak & Lokasi**: Peta lokasi dan kontak yang mudah dihubungi.
+*   **PWA Support**: Dapat diinstal sebagai aplikasi di perangkat mobile.
+
+### 🛡️ Admin Dashboard
+*   **Manajemen Paket**: Tambah, ubah, atau non-aktifkan paket outbound.
+*   **Manajemen Galeri**: Upload dan kelola foto-foto kegiatan.
+*   **Manajemen Konten**: Update informasi "Tentang Kami" dan "Kontak".
+*   **Statistik**: Melihat ringkasan pengunjung dan aktivitas.
+
+## Teknologi yang Digunakan
+
+*   **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+*   **Bahasa**: [TypeScript](https://www.typescriptlang.org/)
+*   **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+*   **Animasi**: [Framer Motion](https://www.framer.com/motion/)
+*   **Ikon**: [Lucide React](https://lucide.dev/)
+*   **Carousel**: [Swiper](https://swiperjs.com/)
+*   **Notifikasi**: [Sonner](https://sonner.emilkowal.ski/)
+*   **PWA**: [next-pwa](https://www.npmjs.com/package/next-pwa)
+
+## Prasyarat
+
+Sebelum memulai, pastikan Anda telah menginstal:
+
+*   [Node.js](https://nodejs.org/) (Versi 18 atau lebih baru)
+*   [npm](https://www.npmjs.com/) atau yarn/pnpm
+
+## Instalasi & Pengembangan
+
+1.  **Clone repositori:**
+    ```bash
+    git clone https://github.com/username/outbound-next.git
+    cd outbound-next
+    ```
+
+2.  **Instal dependensi:**
+    ```bash
+    npm install
+    ```
+
+3.  **Jalankan server pengembangan:**
+    ```bash
+    npm run dev
+    ```
+    Buka [http://localhost:3000](http://localhost:3000) di browser Anda.
+
+## Build & Deploy
+
+### Deployment ke cPanel (Static Export)
+
+Proyek ini telah dikonfigurasi untuk deployment ke hosting statis (seperti **cPanel** public_html) tanpa memerlukan Node.js server.
+
+1.  **Jalankan perintah build:**
+    ```bash
+    npm run build
+    ```
+    Perintah ini akan menghasilkan folder `out/` yang berisi file HTML, CSS, dan JS statis.
+
+2.  **Upload ke cPanel:**
+    *   Compress (zip) seluruh isi folder `out/`.
+    *   Upload file zip ke folder `public_html` di File Manager cPanel.
+    *   Ekstrak file zip tersebut.
+
+**Catatan:** Karena menggunakan mode `static export`, fitur API Routes dan Middleware server-side tidak akan berjalan. Logika dinamis ditangani di sisi klien (Client-side rendering).
+
+### Deployment ke Vercel/Node.js Server
+
+Jika ingin menggunakan fitur server-side (seperti API Routes), ubah konfigurasi `next.config.ts`:
+
+1.  Ganti `output: 'export'` menjadi `output: 'standalone'`.
+2.  Hapus `generateStaticParams` di `src/app/package/[id]/page.tsx` jika tidak diperlukan lagi.
+3.  Jalankan `npm run build`.
+4.  Gunakan `node server.js` (dari folder `dist` atau `.next/standalone`) untuk menjalankan server.
+
+## Struktur Proyek
+
+```
+outbound-next/
+├── public/              # Aset statis (gambar, ikon, manifest)
+├── src/
+│   ├── app/             # Next.js App Router (Halaman & Layout)
+│   ├── assets/          # Aset gambar yang diimport di kode
+│   ├── components/      # Komponen React (UI, Sections, Layout)
+│   ├── context/         # React Context (State Management)
+│   ├── data/            # Data statis awal (Initial Data)
+│   ├── services/        # Service logic (Storage, API)
+│   ├── styles/          # Global styles
+│   ├── types/           # TypeScript definitions
+│   └── utils/           # Helper functions
+├── next.config.ts       # Konfigurasi Next.js
+├── tailwind.config.ts   # Konfigurasi Tailwind CSS
+└── package.json         # Dependensi & Scripts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Lisensi
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[MIT License](LICENSE)
