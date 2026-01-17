@@ -14,12 +14,6 @@ Dibangun menggunakan **Next.js 16**, **Tailwind CSS v4**, dan **TypeScript**, ap
 *   **Informasi Kontak & Lokasi**: Peta lokasi dan kontak yang mudah dihubungi.
 *   **PWA Support**: Dapat diinstal sebagai aplikasi di perangkat mobile.
 
-### 🛡️ Admin Dashboard
-*   **Manajemen Paket**: Tambah, ubah, atau non-aktifkan paket outbound.
-*   **Manajemen Galeri**: Upload dan kelola foto-foto kegiatan.
-*   **Manajemen Konten**: Update informasi "Tentang Kami" dan "Kontak".
-*   **Statistik**: Melihat ringkasan pengunjung dan aktivitas.
-
 ## Teknologi yang Digunakan
 
 *   **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
@@ -56,34 +50,6 @@ Sebelum memulai, pastikan Anda telah menginstal:
     npm run dev
     ```
     Buka [http://localhost:3000](http://localhost:3000) di browser Anda.
-
-## Build & Deploy
-
-### Deployment ke cPanel (Static Export)
-
-Proyek ini telah dikonfigurasi untuk deployment ke hosting statis (seperti **cPanel** public_html) tanpa memerlukan Node.js server.
-
-1.  **Jalankan perintah build:**
-    ```bash
-    npm run build
-    ```
-    Perintah ini akan menghasilkan folder `out/` yang berisi file HTML, CSS, dan JS statis.
-
-2.  **Upload ke cPanel:**
-    *   Compress (zip) seluruh isi folder `out/`.
-    *   Upload file zip ke folder `public_html` di File Manager cPanel.
-    *   Ekstrak file zip tersebut.
-
-**Catatan:** Karena menggunakan mode `static export`, fitur API Routes dan Middleware server-side tidak akan berjalan. Logika dinamis ditangani di sisi klien (Client-side rendering).
-
-### Deployment ke Vercel/Node.js Server
-
-Jika ingin menggunakan fitur server-side (seperti API Routes), ubah konfigurasi `next.config.ts`:
-
-1.  Ganti `output: 'export'` menjadi `output: 'standalone'`.
-2.  Hapus `generateStaticParams` di `src/app/package/[id]/page.tsx` jika tidak diperlukan lagi.
-3.  Jalankan `npm run build`.
-4.  Gunakan `node server.js` (dari folder `dist` atau `.next/standalone`) untuk menjalankan server.
 
 ## Struktur Proyek
 
