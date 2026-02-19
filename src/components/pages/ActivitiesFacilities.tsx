@@ -78,12 +78,11 @@ const ActivitiesFacilities: React.FC = () => {
             <h2 className="text-3xl font-bold text-dark mb-12 text-center">Fasilitas Kami</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { title: 'Aula Pertemuan', icon: '🏢', desc: 'Kapasitas hingga 200 orang.' },
                 { title: 'Mushola', icon: '🕌', desc: 'Tempat ibadah yang bersih dan nyaman.' },
                 { title: 'Toilet & Kamar Bilas', icon: '🚿', desc: 'Jumlah memadai, bersih, dan terawat.' },
                 { title: 'Area Parkir Luas', icon: '🚗', desc: 'Aman dan bisa menampung bus besar.' },
                 { title: 'Kantin & Catering', icon: '🍽️', desc: 'Menyajikan masakan khas Sunda yang lezat.' },
-                { title: 'Saung Istirahat', icon: '🛖', desc: 'Tersebar di berbagai titik untuk bersantai.' },
+                { title: 'Saung Istirahat', icon: '🛖', desc: 'Tersebar di berbagai titik untuk beristirahat.' },
               ].map((item, idx) => (
                 <div key={idx} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
                   <div className="text-4xl mb-4">{item.icon}</div>

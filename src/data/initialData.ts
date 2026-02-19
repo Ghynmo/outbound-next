@@ -92,7 +92,7 @@ export const initialPackages: Package[] = [
       'X-Cave'
     ],
     facilities: [
-      'Tiket Masuk', 'Welcome Drink', 'Makan Siang', 'Snack', 'Souvenir', 'Aula'
+      'Tiket Masuk', 'Welcome Drink', 'Makan Siang', 'Snack', 'Souvenir', 'Tempat Istirahat'
     ],
     levels: ['Play Ground-TK-SD', 'SMP-SMA-Umum'],
     duration: '1 Hari (08.00 - Selesai)',
@@ -106,16 +106,16 @@ export const initialPackages: Package[] = [
         makan_siang_dewasa: 'Nasi Putih, Ayam Bakar, Sayur Asem, Perkedel Jagung, Ikan Asin, Lalapan + Sambal, Kerupuk, Buah Semangka, Air Mineral'
     },
     requirements: [
-        'Kaos Kaki 2 Pasang',
+        'Kaos Kaki & Sarung Tangan',
         'Pakaian Ganti Lengkap',
         'Peralatan Mandi',
         'Peralatan Sholat',
         'Obat Pribadi',
-        'Tidak disarankan membawa Barang-Barang Berharga',
-        'Setiap kelompok pengunjung diharuskan membawa 1 orang petugas untuk stand by di Area Peristirahatan'
+        'Tidak disarankan membawa Barang-Barang Berharga Seperti perhiasan dan barang lainnya yang mudah terjatuh saat permainan',
+        'Setiap Rombongan diharuskan membawa 1 orang petugas untuk stand by di Area Peristirahatan'
     ],
     notes: [
-        'Bila makan siang di box, akan dikenakan biaya'
+        'Bila makan siang di box, akan dikenakan biaya Rp.1000 per Box'
     ],
     gallery: [
       assets.packageGalleryEdu1_1,
@@ -148,7 +148,7 @@ export const initialPackages: Package[] = [
       'Bak Goyang', 'Aqua Scape'
     ],
     facilities: [
-      'Tiket Masuk', 'Welcome Drink', 'Makan Siang', 'Snack', 'Aula'
+      'Tiket Masuk', 'Welcome Drink', 'Makan Siang', 'Snack', 'Tempat Istirahat'
     ],
     levels: ['SD-Dewasa'],
     duration: '1 Hari (08.00 - Selesai)',
@@ -162,16 +162,16 @@ export const initialPackages: Package[] = [
         makan_siang_dewasa: 'Nasi Putih, Ayam Bakar, Sayur Asem, Perkedel Jagung, Ikan Asin, Lalapan + Sambal, Kerupuk, Buah Semangka, Air Mineral'
     },
     requirements: [
-        'Kaos Kaki 2 Pasang',
+        'Kaos Kaki & Sarung Tangan',
         'Pakaian Ganti Lengkap',
         'Peralatan Mandi',
         'Peralatan Sholat',
         'Obat Pribadi',
-        'Tidak disarankan membawa Barang-Barang Berharga',
-        'Setiap kelompok pengunjung diharuskan membawa 1 orang petugas untuk stand by di Area Peristirahatan'
+        'Tidak disarankan membawa Barang-Barang Berharga Seperti perhiasan dan barang lainnya yang mudah terjatuh saat permainan',
+        'Setiap Rombongan diharuskan membawa 1 orang petugas untuk stand by di Area Peristirahatan'
     ],
     notes: [
-        'Bila makan siang di box, akan dikenakan biaya'
+        'Bila makan siang di box, akan dikenakan biaya Rp.1000 per Box'
     ],
     gallery: [
       assets.packageGalleryEdu2_1,
@@ -191,13 +191,13 @@ export const initialPackages: Package[] = [
     description: 'Pengalaman bermalam di alam terbuka dengan fasilitas lengkap. Nikmati suasana malam yang hangat dengan api unggun dan kebersamaan.',
     features: [
       'Tenda Dome', 'Api Unggun', 'Jurit Malam', 'Makan 3x', 'Snack 2x',
-      'Outbound', 'Bakar Ikan/Jagung', 'Welcome Drink', 'Aula & Mushola', 'Toilet Bersih'
+      'Outbound', 'Bakar Ikan/Jagung', 'Welcome Drink', 'Tempat Istirahat & Mushola', 'Toilet Bersih'
     ],
     games: [
       'Api Unggun', 'Jurit Malam', 'Outbound', 'Bakar Ikan/Jagung'
     ],
     facilities: [
-      'Tenda Dome', 'Makan 3x', 'Snack 2x', 'Welcome Drink', 'Aula & Mushola', 'Toilet Bersih'
+      'Tenda Dome', 'Makan 3x', 'Snack 2x', 'Welcome Drink', 'Tempat Istirahat & Mushola', 'Toilet Bersih'
     ],
     levels: ['Anak', 'Dewasa'],
     duration: '2 Hari 1 Malam',
@@ -211,16 +211,16 @@ export const initialPackages: Package[] = [
         makan_siang_dewasa: 'Nasi Putih, Ayam Bakar, Sayur Asem, Perkedel Jagung, Ikan Asin, Lalapan + Sambal, Kerupuk, Buah Semangka, Air Mineral'
     },
     requirements: [
-        'Kaos Kaki 2 Pasang',
+        'Kaos Kaki & Sarung Tangan',
         'Pakaian Ganti Lengkap',
         'Peralatan Mandi',
         'Peralatan Sholat',
         'Obat Pribadi',
-        'Tidak disarankan membawa Barang-Barang Berharga',
-        'Setiap kelompok pengunjung diharuskan membawa 1 orang petugas untuk stand by di Area Peristirahatan'
+        'Tidak disarankan membawa Barang-Barang Berharga Seperti perhiasan dan barang lainnya yang mudah terjatuh saat permainan',
+        'Setiap Rombongan diharuskan membawa 1 orang petugas untuk stand by di Area Peristirahatan'
     ],
     notes: [
-        'Bila makan siang di box, akan dikenakan biaya'
+        'Bila makan siang di box, akan dikenakan biaya Rp.1000 per Box'
     ],
     gallery: [
         assets.packageGalleryCG_1,

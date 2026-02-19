@@ -5,7 +5,7 @@ import SafeImage from '../ui/SafeImage';
 const facilities = [
   { 
     image: assets.facilityImgAula, 
-    title: 'Aula & Tempat Istirahat',
+    title: 'Tempat Istirahat',
     description: 'Area luas dan nyaman untuk beristirahat dan berkumpul bersama rombongan.'
   },
   { 

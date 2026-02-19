@@ -6,7 +6,6 @@ const faqs = [
   { question: 'Apakah bisa refund jika batal?', answer: 'Kebijakan refund berlaku sesuai dengan syarat dan ketentuan yang disepakati saat booking (biasanya H-7).' },
   { question: 'Apakah menyediakan transportasi?', answer: 'Kami tidak menyediakan transportasi, namun kami memiliki area parkir yang luas untuk bus besar.' },
   { question: 'Apakah makanan halal?', answer: 'Tentu saja, semua menu makanan yang kami sajikan dijamin 100% Halal dan higienis.' },
-  { question: 'Bagaimana jika hujan?', answer: 'Kami memiliki aula semi-outdoor yang besar (Pendopo) sehingga kegiatan tetap bisa berlangsung dengan nyaman.' },
 ];
 
 const FAQ: React.FC = () => {

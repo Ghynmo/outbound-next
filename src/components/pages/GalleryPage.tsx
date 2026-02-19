@@ -7,7 +7,7 @@ import { resolvePackageImage } from '../../utils/imageHelper';
 import { useData } from '../../context/DataContext';
 
 const facilitiesData = [
-  { id: 'f1', title: 'Aula Luas', description: 'Ruang serbaguna kapasitas besar', image: assets.gallery1 },
+  { id: 'f1', title: 'Tempat Istirahat', description: 'Tempat istirahat berkapasitas besar', image: assets.gallery1 },
   { id: 'f2', title: 'Mushola', description: 'Tempat ibadah yang nyaman', image: assets.gallery2 },
   { id: 'f3', title: 'Toilet Bersih', description: 'Fasilitas sanitasi terawat', image: assets.gallery3 },
   { id: 'f4', title: 'Makan Siang', description: 'Menu prasmanan lezat', image: assets.gallery4 },
